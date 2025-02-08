@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Contest Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #71a7de;
+        }
+        .event-card {
+            position: relative;
+            width: 100%;
+            max-width: 300px;
+            height: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .event-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+            z-index: 0;
+        }
+        .event-card img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1
+        }
+        .event-card h4, .event-card p {
+            position: relative;
+            z-index: 1;
+            margin: 0;
+        }
+        .event-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container text-center mt-4">
+    <h2 class="fw-bold">Music Contest Events</h2>
+    <p class="text-muted text font-weight-normal fs-4">Join the best music events happening this week!</p>
+    
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <div class="event-card">
+            <img src="https://files.oaiusercontent.com/file-XuG5Va1etpi7H22MtgJw5Z?se=2025-02-08T16%3A01%3A35Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D5fd07fd0-26ad-43b2-8ca6-9861dec285ba.webp&sig=kJ7SnySjzhsRkhlwU3zTJtk0R7yYHVK/IZedsdEj%2BLE%3D" alt="Solo Singer">
+            <h4>Solo Performance</h4>
+            <p>3 Events</p>
+        </div>
+        
+        <div class="event-card">
+            <img src="https://files.oaiusercontent.com/file-2GhXBtVhkv9AQtfV6TnW3Q?se=2025-02-08T16%3A01%3A47Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D2b73a9c1-2fda-4a34-8c3d-4873053b33cd.webp&sig=UgmvwnR30QcwxUU51Zb0dJKPa6KQ8PVzVI3Rf0a1eME%3D" alt="DJ Mixing">
+            <h4>DJ Battle</h4>
+            <p>10+ Events</p>
+        </div>
+        
+        <div class="event-card">
+            <img src="https://files.oaiusercontent.com/file-VMYHrC3L433mRcZpwSiV4N?se=2025-02-08T16%3A02%3A01Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D8a00d7a0-8c0c-40ae-8ee0-925253c8fafa.webp&sig=i3XkuP5vYAHnaFcjIG7gwv5AhdxVHKXv0yTxqR64ZPA%3D" alt="Live Band">
+            <h4>Weekend Showdown</h4>
+            <p>10+ Events</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
